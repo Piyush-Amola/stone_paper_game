@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+.choice {
+  height: 200px;
+  width: 200px;
+  border-radius: 60%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  border-style: groove;
+  background-color:rgba(194, 198, 232, 0.377);
+}
+
+img {
+  height: 190px;
+  width: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.score-boad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#computer-score {
+  font-size: 4rem;
+}
+
+.message-container {
+  margin-top: 5rem;
+}
+
+#message{
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+body{
+  background-color: blue;
+}
+
+
+/* Existing styles */
+
+.result-table {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #081b31;
+}
+
+th, td {
+  border: 5px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+  color: rgb(246, 2, 2);
+  text-align: center;
+}
+
+th {
+  background-color: #081b31;
+  color: white;
+}
+
+@media (max-width:450px) {
+  img {
+      height: 120px;
+      width: 120px;
+    }
+ .choice {
+    height: 130px;
+    width: 130px;
+    border-radius: 100px;
+    
+    }
+  .choices{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #user-score,
+  #Computer-score{
+    font: 2rem;
+  }
+    .message-container {
+      margin: 2rem 1rem 4rem 1rem;
+    }
+  #message{
+    font-size: 1.5rem;
+    display:block;
+  }
+}
