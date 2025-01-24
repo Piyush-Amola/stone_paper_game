@@ -4,12 +4,11 @@
   text-align: center;
 }
 
-
 .choice {
   height: 200px;
   width: 200px;
   border-radius: 60%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -17,7 +16,7 @@
 .choice:hover {
   cursor: pointer;
   border-style: groove;
-  background-color:rgba(194, 198, 232, 0.377);
+  background-color: rgba(194, 198, 232, 0.377);
 }
 
 img {
@@ -35,7 +34,7 @@ img {
   margin-top: 5rem;
 }
 
-.score-boad{
+.score-boad {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +52,7 @@ img {
   margin-top: 5rem;
 }
 
-#message{
+#message {
   background-color: #081b31;
   color: #fff;
   font-size: 2rem;
@@ -61,12 +60,26 @@ img {
   padding: 1rem;
   border-radius: 1rem;
 }
-body{
+body {
   background-color: blue;
 }
 
+header {
+  background-color: #081b31;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 4px solid #ddd;
+}
 
-/* Existing styles */
+header h1 {
+  font-size: 3rem;
+}
+header .sub-heading {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
 
 .result-table {
   margin-top: 2rem;
@@ -80,7 +93,8 @@ table {
   background-color: #081b31;
 }
 
-th, td {
+th,
+td {
   border: 5px solid #ddd;
   padding: 8px;
   font-size: 20px;
@@ -93,30 +107,29 @@ th {
   color: white;
 }
 
-@media (max-width:450px) {
+@media (max-width: 450px) {
   img {
-      height: 120px;
-      width: 120px;
-    }
- .choice {
+    height: 120px;
+    width: 120px;
+  }
+  .choice {
     height: 130px;
     width: 130px;
     border-radius: 100px;
-    
-    }
-  .choices{
+  }
+  .choices {
     display: flex;
     flex-wrap: wrap;
   }
   #user-score,
-  #Computer-score{
+  #Computer-score {
     font: 2rem;
   }
-    .message-container {
-      margin: 2rem 1rem 4rem 1rem;
-    }
-  #message{
+  .message-container {
+    margin: 2rem 1rem 4rem 1rem;
+  }
+  #message {
     font-size: 1.5rem;
-    display:block;
+    display: block;
   }
 }
