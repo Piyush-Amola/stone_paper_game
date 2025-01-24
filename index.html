@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock, Paper, Scissors Game</h1>
+    </header>
     <div class="choices">
-        <div class="choice" id="rock">
-             <img src="./img/rock.png" alt="rock" />
-        </div>
-        <div class="choice" id="paper">
-            <img src="./img/paper.png" alt="paper" />
-        </div>
-        <div class="choice" id="scissors">
-            <img src="./img/scissors.png" alt=" scissors" />
-        </div>
+      <div class="choice" id="rock">
+        <img src="./img/rock.png" alt="rock" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./img/paper.png" alt="paper" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./img/scissors.png" alt=" scissors" />
+      </div>
     </div>
     <div class="score-boad">
-        <div class="score">
-            <p id="user-score">0</p>
-            <p>You</p>
-        </div>
-        <div class="score">
-            <p id="computer-score">0</p>
-            <p>Computer</p>
-        </div>
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="computer-score">0</p>
+        <p>Computer</p>
+      </div>
     </div>
     <div class="message-container">
-        <p id="message">Play your move</p>
-      </div>
+      <p id="message">Choose Rock, Paper, or Scissors!</p>
+    </div>
 
     <div class="message-container">
-        <p id="message">Play your move</p>
+      <p id="message">Show your move</p>
     </div>
+   
     <div class="result-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Round</th>
-                    <th>User Choice</th>
-                    <th>Computer Choice</th>
-                </tr>
-            </thead>
-            <tbody id="results-body">
-                <!-- Results will be appended here -->
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Round</th>
+            <th>User Choice</th>
+            <th>Computer Choice</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+          <!-- Results will be appended here -->
+        </tbody>
+      </table>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>
